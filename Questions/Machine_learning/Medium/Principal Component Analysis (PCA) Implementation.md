@@ -5,7 +5,7 @@ https://www.deep-ml.com/problems/19
 ```
 import numpy as np 
 def pca(data: np.ndarray, k: int) -> np.ndarray:
-	mean = np.mean(data, axis=0)
+    mean = np.mean(data, axis=0)
     std_dev = np.std(data, axis=0)
     data_std = (data-mean)/std_dev
 
@@ -24,6 +24,7 @@ def pca(data: np.ndarray, k: int) -> np.ndarray:
 ```
 
 **Key Steps**
+
 Standardise -> covariance -> eigen vals and vectors -> sort
 
 * For Covariance keep rowvar=False
